@@ -1,0 +1,19 @@
+{
+  "name": "nexus-crypto-platform",
+  "version": "1.0.0",
+  "description": "Main server for Nexus",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "npm install && cd client && npm install && npm run build"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
