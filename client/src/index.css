@@ -250,3 +250,40 @@ button:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(41, 98,
 @media (max-width: 900px) {
   .phone-mockup { display: none; } 
 }
+/* --- MOBILE RESPONSIVE FIX --- */
+@media (max-width: 1000px) {
+  /* Fix 1: Login Screen */
+  .auth-wrapper {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  /* Hide the big phone on mobile so Login Box is visible */
+  .phone-mockup {
+    display: none !important;
+  }
+
+  /* Fix 2: Dashboard Layout */
+  .main-grid {
+    display: flex !important;
+    flex-direction: column;
+    height: auto !important;
+    overflow-y: auto !important;
+  }
+
+  /* Allow scrolling on mobile */
+  .fade-in {
+    height: auto !important;
+    overflow-y: auto !important;
+    display: block !important;
+  }
+  
+  /* Make charts and lists full width */
+  .glass-panel {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 20px;
+  }
+}
